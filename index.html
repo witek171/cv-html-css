@@ -1,62 +1,128 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>CV Witold Pacholik</title>
-		<meta name="description" content="your description">
-		<meta name="author" content="your name">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Witold Pacholik</title>
+    <meta name="description" content="simple CV example created with HTML and CSS">
+    <meta name="author" content="Witold Pacholik">
+    <link rel="icon" href="./img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-	<body>
-	<main>
-		<!-- Skills -->
-		<section>
-			<h3>Skills</h3>
+<body>
+<header>
+    <h1>Witold Pacholik</h1>
+    <section>
+        <p>Hello! I am Witold Pacholik. I study Computer Science and have a growing 
+            interest in systems analysis,
+            functional requirements, and software testing. I’m focused, analytical,
+            and eager to learn in a
+            business-oriented environment. I'm passionate about transforming business
+            needs into working IT
+            solutions.</p>
+        <p>
+            <a href="mailto:witoldpacholik@wp.pl" style="text-decoration:none; color: inherit; margin-right: 20px;">
+                <i class="fas fa-envelope"></i> witoldpacholik@wp.pl
+            </a><br>
+            <a href="tel:+48530524793" style="text-decoration:none; color: inherit;">
+                <i class="fas fa-phone"></i> +48 530 524 793
+            </a>
+        </p>
 
-			... put your code here ...
+    </section>
+</header>
+<main>
+    <section>
+        <h3>Skills</h3>
+        <div class='skills'>
+            <div class='column'>
+                <h4>Good knowledge</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>Spring Security</li>
+                    <li>Hibernate</li>
+                    <li>SQL</li>
+                    <li>JUnit</li>
+                    <li>Mockito</li>
+                    <li>Maven</li>
+                    <li>Docker</li>
+                    <li>Git/GitHub</li>
+                </ul>
+            </div>
+            <div class='column'>
+                <h4>Basic knowledge</h4>
+                <ul>
+                    <li>C#</li>
+                    <li>React</li>
+                    <li>Linux/Bash</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Languages</h4>
+                <p>🇵🇱 Polish - Native speaker</p>
+                <p>🇬🇧 English - Intermediate</p>
+            </div>
+        </div>
+    </section>
 
-		</section>
-		<!--Courses -->
-		<section>
-			<h3>Courses & Workshops</h3>
-			<article class='course'>
-				<div class='title'>
-					CodeIsAwsome - My First Course
-				</div>
-				<div class="descrition">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non iaculis mi, vel lacinia odio. Nam eget nisi in ante fermentum consectetur. Vivamus metus dui, placerat vel arcu eu, interdum faucibus magna.</p>
-				</div>
-			</article>
-		</section>
-		<!-- Education -->
-		<section>
-			<h3>...some title...</h3>
-			<article>
-				<div class='school'>
-					<span>2015-2018</span>
-				</div>
-				<div class="descrition">
-					Bechelor Degree of Octorobotics
-				</div>
-			</article>
-		</section>
-		<!-- Experience / Projects / Portfolio ... -->
+    <section>
+        <h3>Education</h3>
+        <article>
+            <div class='school'>
+                <span>2023-2027</span> <strong>Silesian University of Technology</strong>
+            </div>
+            <div class="descrition">
+                Engineer’s degree in Computer Science
+            </div>
+        </article>
+        <article>
+            <div class='school'>
+                <span>2019-2023</span> <strong>High School</strong>
+            </div>
+            <div>
+                Main subjects: Mathematics, Computer Science
+            </div>
+        </article>
+    </section>
 
-	</main>
-	<header>
-			<div>
-				<img src="path/to/file" />
-			</div>
-			<h1>first second name</h1>
-			<section>
-				<p>Your story goes here... e.g. Hello! I am xyz. I work as web designer and front-end developer.
-				I have passion for pixel perfect, minimal and easy to use interfaces.</p>
-			</section>
-		</header>
-		<footer>
-			<p>Created by @Name  / LinkedIn / 2018 </p>
-		</footer>
-	</body>
+    <section>
+        <h3>Courses & Workshops</h3>
+        <article class='course'>
+            <div class='title'>
+                <h4>Corporate Readiness Certificate (CRC)
+                    Java in Practice: Building and Managing Applications
+                </h4>
+            </div>
+            <div class="descrition">
+                <p>During the course, I learned how to work with key technologies used in 
+                    modern Java development. The curriculum covered Git for version control,
+                    design patterns, relational databases, and creating frontend applications
+                    with Angular. I studied how to use Spring Boot, Spring Security, and Hibernate
+                    for building backend systems. I also explored best practices in unit testing,
+                    dependency management with Maven, and writing basic CI/CD pipelines and UNIX 
+                    shell scripts.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <h3>Interests</h3>
+        <article>
+            <p>Football, Economics and financial markets </p>
+        </article>
+    </section>
+</main>
+<footer>
+    <p>I agree to the processing of personal data provided in this document for realising the recruitment process
+        pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement
+        with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection
+        of natural persons with regard to the processing of personal data and on the free movement of such data, and
+        repealing Directive 95/46/EC (General Data Protection Regulation).</p>
+</footer>
+</body>
 </html>
