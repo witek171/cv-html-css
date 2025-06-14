@@ -151,16 +151,16 @@ a .fab {
     text-decoration: underline;
 }
 
-ul.job-description li:before {
-    content: "✔";
-    padding-right: 0.5em;
-    color: #509e98;
-}
+/*ul.job-description li:before {*/
+/*    content: "✔";*/
+/*    padding-right: 0.5em;*/
+/*    color: #509e98;*/
+/*}*/
 
 footer {
     /*padding: 1em 1.5em;*/
     background-image: url('./img/bg.jpg');
-
+    background-size: cover;
     color: white;
     text-align: left;
     padding-left: 35%;
