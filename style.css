@@ -6,130 +6,133 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #f2f6fc, #e0ecff);
+    background: #f5f7fb;
     color: #333;
     padding: 2rem;
 }
 
 .container {
-    max-width: 1000px;
-    background: #fff;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 3rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem; /* mniejsze odstępy między kartami */
 }
 
-header {
+/* CARD SECTIONS (Header + reszta) */
+.card-section {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.card-section:hover {
+    transform: translateY(-2px);
+}
+
+/* HEADER CARD */
+.header-card {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
     gap: 2rem;
-    margin-bottom: 2.5rem;
+    align-items: center;
+    color: #222;
 }
 
 .profile-pic {
-    flex: 0 0 150px;
-    height: 200px;
+    width: 170px;
+    height: 200px; /* prostokąt */
+    /*object-fit: cover;*/
     border-radius: 12px;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
-    flex: 1;
+    border: 2px solid rgba(0,0,0,0.1);
 }
 
 .header-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 0.3rem;
 }
 
 .tagline {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.8;
 }
 
 .contact {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    font-size: 0.95rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
 }
 
 .contact a {
-    color: #0077cc;
+    color: #2575fc;
     text-decoration: none;
-}
-
-.contact i {
-    margin-right: 0.5rem;
-    color: #0077cc;
-}
-
-.section {
-    margin-bottom: 2rem;
-}
-
-.section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #222;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
-}
-
-.two-cols {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.col {
-    flex: 1;
-    min-width: 250px;
-}
-
-.download-section {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.download-btn.small {
-    padding: 0.4rem 0.8rem;
     font-size: 0.9rem;
-    background-color: #96b7d9;
-    color: white;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background 0.3s ease;
+    transition: opacity 0.3s ease;
 }
 
-.download-btn.small:hover {
-    background-color: #689cc4;
+.contact a:hover {
+    opacity: 0.8;
 }
 
+/* SECTION HEADINGS */
+.card-section h2 {
+    font-size: 1.4rem;
+    color: #2575fc;
+    margin-bottom: 0.8rem;
+}
+
+/* EXPERIENCE */
+.experience-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: #222;
+}
+
+.experience-item h3 span {
+    font-weight: 400;
+    color: #555;
+}
+
+.experience-item .date {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* LISTY ZE STRZAŁKAMI */
 ul {
     list-style: none;
     padding-left: 1rem;
+    line-height: 1.5;
 }
 
 ul li::before {
-    content: "•";
-    color: #0077cc;
+    content: "▹";
+    color: #2575fc;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 
-footer {
+
+
+
+
+footer p {
     font-size: 0.8rem;
-    text-align: center;
-    color: #777;
-    margin-top: 3rem;
+    color: #666;
     line-height: 1.4;
-    border-top: 1px solid #eee;
-    padding-top: 1rem;
+}
+.two-cols {
+    display: flex;
+    justify-content: space-between; /* rozdzieli kolumny */
+    gap: 2rem; /* odstęp między kolumnami */
+    align-items: flex-start;
+}
+
+.two-cols .col {
+    flex: 1; /* obie kolumny zajmą po połowie miejsca */
 }
